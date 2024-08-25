@@ -67,5 +67,6 @@ for item in range (linhaZero):
     elif "D" in op:
         print(f"Diferença: Conjunto 1 {conjunto1}, Conunto 2 {conjunto2}. Resultado: {conjunto1.difference(conjunto2)}")
     elif "C" in op:
-        print(f"Produto Cartesiano: Conjunto 1 {conjunto1}, Conunto 2 {conjunto2}. Resultado: {22}") 
+        produtoCartesiano = {(x, y) for x in conjunto1 for y in conjunto2} #Calcular o Produto Cartesiano
+        print(f"Produto Cartesiano: Conjunto 1 {conjunto1}, Conunto 2 {conjunto2}. Resultado: {produtoCartesiano}") 
     linha += 3 #Passa para as próximas operações
